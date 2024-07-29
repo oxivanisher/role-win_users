@@ -12,6 +12,8 @@ This role is built to be used with Ansible oder SSH on Windows.
 Notes
 -----
 
+Since window only creates the registry on user login, you have to login with this user first, before configuring it i.e. with the other roles of the `oxivanisher.windows_desktop` collection.
+
 Please be aware that this role is not very security oriented! The password should come from some secure location since the module is using it in plaintext. Also the account will not have to change the password, is unlocked and enabled. And the password will be reset to the one in this list.
 The Ansible module uses the following settings to configure the user:
 ```yaml
