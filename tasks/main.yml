@@ -12,6 +12,5 @@
     account_disabled: false
     password_expired: false
     update_password: always
-    user_cannot_change_password: true
     groups: "{{ item.groups }}"
   loop: "{{ win_users_users }}"

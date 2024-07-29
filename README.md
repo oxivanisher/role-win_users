@@ -23,7 +23,6 @@ account_locked: false
 account_disabled: false
 password_expired: false
 update_password: always
-user_cannot_change_password: true
 ```
 
 Role Variables
