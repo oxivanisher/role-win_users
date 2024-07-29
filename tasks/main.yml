@@ -1,0 +1,17 @@
+---
+
+- name: Ensure user bob is present
+  ansible.windows.win_user:
+    name: "{{ item.name }}"
+    fullname: "{{ item.fullname }}"
+    password: "{{ item.password }}"
+    description: "{{ item.description }}"
+    state: present
+    account_expires: never
+    account_locked: false
+    account_disabled: false
+    password_expired: false
+    update_password: always
+    user_cannot_change_password: true
+    groups: "{{ item.groups }}"
+  loop: "{{ win_users_users }}"

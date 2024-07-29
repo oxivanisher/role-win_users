@@ -1,0 +1,10 @@
+---
+
+win_users_users: []
+  # - name: john
+  #   fullname: John Doe
+  #   password: SuperSecretPassword123
+  #   description: John the local user
+  #   groups:
+  #     - Users
+  #     - Administrators
