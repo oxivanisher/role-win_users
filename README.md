@@ -1,5 +1,6 @@
 win_users
 =========
+[![Ansible Lint](https://github.com/oxivanisher/role-win_users/actions/workflows/ansible-lint.yml/badge.svg)](https://github.com/oxivanisher/role-win_users/actions/workflows/ansible-lint.yml)
 
 Create local users and ensure that they are active.
 I use it to ensure that a local administrator user exists with a complex, random password.
