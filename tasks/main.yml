@@ -1,6 +1,6 @@
 ---
 
-- name: Ensure user bob is present
+- name: Ensure local users exist
   ansible.windows.win_user:
     name: "{{ item.name }}"
     fullname: "{{ item.fullname }}"
