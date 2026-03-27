@@ -14,3 +14,5 @@
     update_password: always
     groups: "{{ item.groups }}"
   loop: "{{ win_users_users }}"
+  loop_control:
+    label: "{{ item.name }}"
